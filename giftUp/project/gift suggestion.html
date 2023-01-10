@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiftUp</title>
+    <style>
+        body{
+            font-family: "Lato", sans-serif;
+            background-color:#111  ;
+
+            background-image: url("bg1.jpg");
+            
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: white;
+        }
+       
+        /* top bar */
+
+        .topnav {
+          overflow: hidden;
+          background-color:black;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color:white;
+        }
+
+        .topnav a {
+          float:right;
+          color:#f1f1f1;
+          text-align: center;
+          padding: 14px 16px;
+          font-size: 17px;
+
+        }
+
+        .topnav input[type=text] {
+          float: right;
+          padding: 6px;
+          margin-top: 8px;
+          margin-right: 16px;
+          font-size: 17px;
+        }
+
+
+
+ /* side bar */
+        .sidenav {
+            display: none;
+             height: 100%;
+             width: 250px;
+             position: fixed;
+             z-index: 1;
+             top: 0;
+             left: 0;
+             background-color:black; 
+             overflow-x: hidden;
+             padding-top: 60px;
+            }
+
+     .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            }
+
+           .sidenav a:hover {
+             color: #f1f1f1;
+            }
+
+    .sidenav .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 36px;
+         margin-left: 50px;
+        }
+
+    @media screen and (max-height: 450px) {
+       .sidenav {padding-top: 15px;}
+       .sidenav a {font-size: 18px;}
+    }
+    header {
+      /* background-color: #B3B6B7; */
+      color:white;
+      font-size: 35px;
+      padding: 1px;
+      text-align: center;
+    }
+
+    /* flower section */
+    #f2{
+      
+      border:8px solid#ddd;
+      margin: 0px 30px 0px 20px;
+    }
+    /* black border around photo */
+    #c2{
+      
+      border:8px solid black;
+      margin: 0px 30px 0px 20px;
+    }
+  
+    .blackColor{
+      color: #111;
+    }
+
+    /* second background picture */
+    #bg{
+      background-image: url("bg2.jpg");
+            
+            /* background-color: #cccccc; */
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: white;
+    }
+
+    /* Third background image */
+
+    #bg3{
+      background-image: url("bg3.jpg");
+            
+            /* background-color: #cccccc; */
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: white;
+    }
+
+   
+
+   
+    </style>
+</head>
+<body>
+    <!-- below line show open tab place -->
+   
+    
+      <div class="topnav" </div>   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>  <span style='font-size:25px;'>&#127873;</span>
+      <input type="text" placeholder="Search">
+
+     <a href="#contact"> Contact </a>
+    <a href="#about"> About</a>
+    <a href="login.htm">Log In</a>
+    <a href="signUp.html"> Sign Up</a>
+    <a href="#home" > Home </a>
+  
+
+    
+   </div>
+ 
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#flower">Flower</a>
+  <a href="#cake">Cakes</a>
+  <a href="#birthday">Birthday</a>
+  <a href="#anni">Anniversary</a>
+  <a href="#wedding">Wedding</a>
+</div>
+
+
+
+  
+  <header>
+    
+    <!-- <img src="gift3.jpg" alt="image" align="left" height="130" width="200"> -->
+    <!-- <img src="gift2.jpg" alt="image" align="right" height="130" width="238"> -->
+    <h3>A Moments of Choosing the Best Gift </h3>
+    
+  </header>
+
+  <h3 id="flower" style="font-size:40px" align="center">Flower</h3> 
+
+  <pre style="font-size:30px" align="center">    Flowers are a proud assertion that a ray of beauty <br>out values all the utilities in<br>    the world</pre> 
+
+  <a href="https://www.floweraura.com/flowers">
+  <img id="f2" src="f2.jpg" height="250" width="300" title="tulips">
+  <img id="f2" src="f3.jpg" height="250" width="300" title="Roses">
+  <img id="f2" src="f4.jpg" height="250" width="300" title="rose">
+  <img id="f2" src="f5.jpg" height="250" width="300" title="Tulips"><br><br>
+
+  </a>
+
+  <!-- Cake area -->
+  <h3 id="cake" style="font-size:40px " align="center" class="blackColor">Cakes</h3> 
+
+  <pre style="font-size:30px" align="center" class="blackColor">    A little bliss in every bite.</pre> 
+  
+  <a href="https://www.floweraura.com/cakes">
+  <img id="c2" src="c1.jpg" height="250" width="300" title="marriage cake">
+  <img id="c2" src="c2.jpg" height="250" width="300" title="Cup Cakes">
+  <img id="c2" src="c3.jpg" height="250" width="300" title="Chocolate cakes">
+  <img id="c2" src="c4.jpg" height="250" width="300" title="Fruit cakes">  <br><br>
+  </a>
+
+  
+  <!-- second background image -->
+  
+  
+  <!-- birthday area / third section -->
+  <div id="bg">
+  <h3 id="birthday" style="font-size:40px" align="center" >Birthday</h3> 
+
+  <pre style="font-size:30px" align="center" >    It's your special day — get out there and celebrate</pre> 
+
+  <a href="https://www.floweraura.com/flowers/occasion/birthday">
+  <img id="f2" src="b1.jpg" height="250" width="300" title="Teddy">
+  <img id="f2" src="b2.jpg" height="250" width="300" title="Pillow">
+  <img id="f2" src="b3.jpg" height="250" width="300" title="Show piece">
+  <img id="f2" src="b4.jpg" height="250" width="300" title="Coffe mug"><br><br>
+  </a>
+</div>
+
+
+<!-- Anniversary Section-->
+<h3 id="anni" style="font-size:40px " align="center" class="blackColor">Anniversary</h3> 
+
+  <pre style="font-size:30px" align="center" class="blackColor">  There is something for You - Go for It</pre> 
+  
+  <a href="https://www.floweraura.com/anniversary">
+  <img id="c2" src="a1.jpg" height="250" width="300" title="glass couple">
+  <img id="c2" src="a2.webp" height="250" width="300" title="Couple mug">
+  <img id="c2" src="a3.jpg" height="250" width="300" title="Couple watch">
+  <img id="c2" src="a4.jpg" height="250" width="300" title="couple purse">  <br><br>
+</a>
+  <!-- Wedding section -->
+
+   <div id="bg3">
+  <h3 id="wedding" style="font-size:40px" align="center" >Wedding</h3> 
+
+  <pre style="font-size:30px" align="center" >    To make You day memorable - We have something</pre> 
+
+  <a href="https://www.floweraura.com/st-search?term=wedding">
+  <img id="f2" src="w1.jpg" height="250" width="300" title="Gift wrapping">
+  <img id="f2" src="w2.jpg" height="250" width="300" title="Love Ladder">
+  <img id="f2" src="w3.jpg" height="250" width="300" title="Ring">
+  <img id="f2" src="w4.jpg" height="250" width="300" title="Mr Mrs Show "><br><br>
+  </a>
+
+</div>
+
+<!-- Contact part -->
+
+
+<h1 id="contact" style="color:black;" align="center">CONTACT</h1> <hr>
+<h2 align="center" style="color:#111" >we'd &#9825; to help </h2>
+<p align="center" style="color:black"> let us know your experience. Feel free to say hello!</p>
+
+<div  style="color:black"  align="center" > <b>
+  <pre> &#127757;  lovely professional university </pre>
+  <pre> &#9743;   1234567891 </pre>
+  <pre> &#9993;   GiftUp3114@gmail.com </pre>
+  <hr style="width:60%;text-align:left;margin-left:0">
+  
+</b>
+  </div>
+
+  
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+   
+</body>
+ </html>       
+ 
+ 
